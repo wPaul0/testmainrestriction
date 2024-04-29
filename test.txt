@@ -1,3 +1,5 @@
 this is a test
 check if push is still working
 the test is successfull
+
+edding mode prüfen ob nun der code in branch gepusht aber nicht in main gepusht wird
