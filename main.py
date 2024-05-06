@@ -5,8 +5,6 @@ print("testtest")
 print('test "test       "')
 
 
-
-
 def tet(a, b):
     '''Funktion fügt zwei buchstaben zusammen und trennt sie durch ein komma'''
     return a + ',' + b
