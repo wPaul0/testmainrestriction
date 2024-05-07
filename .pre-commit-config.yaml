@@ -1,6 +1,23 @@
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks.git
+  - repo: https://github.com/pre-commit/pre-commit-hooks.git
     rev: v2.4.0
     hooks:
-    -   id: flake8
+      - id: flake8
         args: ["--config", ".flake8"]
+
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: "v6.8.0"  # Wähle die gewünschte Version von eslint
+    hooks:
+      - id: eslint
+        name: "ESLint"
+        entry: eslint
+        files: "\\.tsx?$"  # Überprüfe TypeScript-Dateien
+        additional_dependencies: ["@typescript-eslint/parser", "@typescript-eslint/eslint-plugin"]
+
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: "v6.8.0"  # Wähle die gewünschte Version von eslint
+    hooks:
+      - id: eslint
+        name: "ESLint"
+        entry: eslint
+        files: "\\.jsx?$"  # Überprüfe JavaScript/JSX-Dateien (für Next.js)
