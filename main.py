@@ -3,8 +3,6 @@ print("test")
 print("test test")
 print("testtest")
 print('test "test       "')
-
-
 def tet(a, b):
     '''Funktion fügt zwei buchstaben zusammen und trennt sie durch ein komma'''
     return a + ',' + b
@@ -12,3 +10,4 @@ def tet(a, b):
 
 print(tet("Hello", "World"))
 print("letzte Zeile")
+print("Zeile1.2")
